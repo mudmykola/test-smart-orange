@@ -21,6 +21,7 @@
 $c100: #333333;
 $c200: #BDBDBD;
 $c300: #0000;
+$c400: #FBFBFB;
 
 $default: #fff;
 
@@ -58,13 +59,25 @@ $default: #fff;
   }
 }
 %global-btn {
-  background: $c200;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: var(--font-m);
-  color: $default;
-  padding: 16px 63px;
-  border-radius: 39px;
+  width: 13.875rem;
+  cursor: pointer;
+  background: $default;
+  bottom: 0;
+  padding: 1.875rem 3.125rem;
+  &:hover{
+    img{
+      padding-left: 1rem;
+      @extend %htrans;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    color: $c100;
+    img{
+      padding-left: 0.75rem;
+      @extend  %dtrans;
+    }
+  }
 }
 
 //container
