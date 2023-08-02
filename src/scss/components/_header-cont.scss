@@ -1,0 +1,86 @@
+.headercont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-info {
+    text-transform: uppercase;
+    margin-right: 7.625rem;
+
+    h1 {
+      color: $c200;
+      font-size: 4rem;
+      line-height: 4.375rem;
+      font-weight: var(--font-l);
+    }
+
+    p {
+      font-weight: var(--font-b);
+      color: $c100;
+    }
+
+    &__btn {
+      button + button {
+        margin-left: 1.438rem;
+      }
+
+      button {
+        background: transparent;
+        width: 3.313rem;
+        height: 3.313rem;
+        border: 1px solid $c200;
+      }
+    }
+
+  }
+
+  &-slider {
+    overflow: hidden;
+    width: 100%;
+
+    &--commit {
+      li{
+        position: relative;
+      }
+      &__link {
+        cursor: pointer;
+        position: absolute;
+        background: $default;
+        bottom: 0;
+        padding: 1.875rem 3.125rem;
+        &:hover{
+          img{
+            padding-left: 1rem;
+            @extend %htrans;
+          }
+        }
+        a {
+          text-transform: uppercase;
+          color: $c100;
+
+          img{
+            padding-left: 0.75rem;
+            @extend  %dtrans;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-fraction {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: $c200;
+  font-weight: var(--font-r);
+  padding-top: 5.625rem;
+
+}
+
+.swiper-pagination-current {
+  padding-right: 1.563rem;
+}
+
+.swiper-pagination-total {
+  padding-left: 1.563rem;
+}

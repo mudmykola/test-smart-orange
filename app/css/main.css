@@ -1,0 +1,230 @@
+@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial?styles=143134,143123,143140");
+:root {
+  --font-family: "TT Hoves Pro Trial", sans-serif;
+  --content-width: 1034px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --light-color: #fff;
+  --font-l: 300;
+  --font-r: 400;
+  --font-b: 700;
+  --h-tr: all 0.5s ease;
+  --d-tr: all 0.3s ease;
+}
+
+.headercont-slider--commit__link a img, .navigation-menu ul li:after {
+  -webkit-transition: var(--d-tr);
+  -o-transition: var(--d-tr);
+  transition: var(--d-tr);
+}
+
+.headercont-slider--commit__link:hover img, .navigation-menu ul li:hover:after {
+  -webkit-transition: var(--h-tr);
+  -o-transition: var(--h-tr);
+  transition: var(--h-tr);
+}
+
+.box-container {
+  width: 925px;
+  float: right;
+  padding: 0 15px;
+}
+
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* stylelint-disable */ /* stylelint-disable */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+p,
+h3,
+h2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  font-weight: var(--font-r);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #333333;
+  background: #fff;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  width: var(--container-width);
+}
+
+.navigation {
+  padding: 1.813rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.navigation-menu {
+  margin-left: 20.625rem;
+}
+.navigation-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.75rem;
+}
+.navigation-menu ul li {
+  cursor: pointer;
+  position: relative;
+}
+.navigation-menu ul li:after {
+  content: "";
+  position: absolute;
+  border-top: 0.063rem solid #333333;
+  border-bottom: 0.063rem solid #333333;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.navigation-menu ul li:hover:after {
+  width: 100%;
+}
+.navigation a {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: var(--font-r);
+}
+
+.headercont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.headercont-info {
+  text-transform: uppercase;
+  margin-right: 7.625rem;
+}
+.headercont-info h1 {
+  color: #BDBDBD;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  font-weight: var(--font-l);
+}
+.headercont-info p {
+  font-weight: var(--font-b);
+  color: #333333;
+}
+.headercont-info__btn button + button {
+  margin-left: 1.438rem;
+}
+.headercont-info__btn button {
+  background: transparent;
+  width: 3.313rem;
+  height: 3.313rem;
+  border: 1px solid #BDBDBD;
+}
+.headercont-slider {
+  overflow: hidden;
+  width: 100%;
+}
+.headercont-slider--commit li {
+  position: relative;
+}
+.headercont-slider--commit__link {
+  cursor: pointer;
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  padding: 1.875rem 3.125rem;
+}
+.headercont-slider--commit__link:hover img {
+  padding-left: 1rem;
+}
+.headercont-slider--commit__link a {
+  text-transform: uppercase;
+  color: #333333;
+}
+.headercont-slider--commit__link a img {
+  padding-left: 0.75rem;
+}
+
+.swiper-pagination-fraction {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #BDBDBD;
+  font-weight: var(--font-r);
+  padding-top: 5.625rem;
+}
+
+.swiper-pagination-current {
+  padding-right: 1.563rem;
+}
+
+.swiper-pagination-total {
+  padding-left: 1.563rem;
+}
+/*# sourceMappingURL=main.css.map */

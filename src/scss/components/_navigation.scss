@@ -1,0 +1,45 @@
+
+.navigation {
+  padding: 1.813rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &-menu {
+    margin-left: 20.625rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 3.75rem;
+      li{
+        cursor: pointer;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          border-top: 0.063rem solid $c100;
+          border-bottom: 0.063rem solid $c100;
+          width: 0;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          @extend %dtrans;
+        }
+        &:hover:after{
+          width: 100%;
+          @extend %htrans;
+        }
+      }
+    }
+  }
+
+  a {
+
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: $c100;
+    text-transform: uppercase;
+    font-weight: var(--font-r);
+  }
+}
