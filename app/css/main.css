@@ -17,13 +17,13 @@
   box-shadow: 0px 5px 35px rgba(225, 242, 255, 0.9);
 }
 
-.contacts-box__form--send a svg, .contacts-box__form--send, .project-box__btn a svg, .project-box__btn, .project-box__img--col2 img, .project-box__img--col1 img, .headercont-slider--commit__link a img, .navigation-menu ul li:after, .contacts-box__form--send a img, .project-box__btn a img, .about-text__btn a img {
+.footer-menu li a, .contacts-box__form--send a svg, .contacts-box__form--send, .project-box__btn a svg, .project-box__btn, .project-box__img--col2 img, .project-box__img--col1 img, .about-text__btn a svg, .about-text__btn a, .headercont-slider--commit__link a img, .headercont-slider--commit__link, .navigation-menu ul li:after, .contacts-box__form--send a img, .project-box__btn a img, .about-text__btn a img {
   -webkit-transition: var(--d-tr);
   -o-transition: var(--d-tr);
   transition: var(--d-tr);
 }
 
-.contacts-box__form--send:hover svg, .contacts-box__form--send:hover a, .contacts-box__form--send:hover, .project-box__btn:hover svg, .project-box__btn:hover a, .project-box__btn:hover, .project-box__img--col2 img:hover, .project-box__img--col1 img:hover, .headercont-slider--commit__link:hover img, .navigation-menu ul li:hover:after, .contacts-box__form--send:hover img, .project-box__btn:hover img, .about-text__btn:hover img {
+.footer-menu li a:hover, .contacts-box__form--send:hover svg, .contacts-box__form--send:hover a, .contacts-box__form--send:hover, .project-box__btn:hover svg, .project-box__btn:hover a, .project-box__btn:hover, .project-box__img--col2 img:hover, .project-box__img--col1 img:hover, .about-text__btn:hover svg, .about-text__btn:hover a, .about-text__btn:hover, .headercont-slider--commit__link:hover img, .headercont-slider--commit__link:hover svg, .headercont-slider--commit__link:hover a, .headercont-slider--commit__link:hover, .navigation-menu ul li:hover:after, .contacts-box__form--send:hover img, .project-box__btn:hover img, .about-text__btn:hover img {
   -webkit-transition: var(--h-tr);
   -o-transition: var(--h-tr);
   transition: var(--h-tr);
@@ -224,6 +224,18 @@ a {
   bottom: 0;
   padding: 1.875rem 3.125rem;
 }
+.headercont-slider--commit__link:hover {
+  background: #F3F3F3;
+}
+.headercont-slider--commit__link:hover a {
+  color: #333333;
+}
+.headercont-slider--commit__link:hover svg {
+  margin-left: 1rem;
+}
+.headercont-slider--commit__link:hover svg path {
+  fill: #333333;
+}
 .headercont-slider--commit__link:hover img {
   padding-left: 1rem;
 }
@@ -308,6 +320,18 @@ a {
 .about-text__btn {
   margin-top: 1.25rem;
 }
+.about-text__btn:hover {
+  background: #F3F3F3;
+}
+.about-text__btn:hover a {
+  color: #333333;
+}
+.about-text__btn:hover svg {
+  margin-left: 1rem;
+}
+.about-text__btn:hover svg path {
+  fill: #333333;
+}
 .about-text__btn a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +342,12 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.about-text__btn a svg {
+  margin-left: 0.75rem;
+}
+.about-text__btn a svg path {
+  fill: #fff;
 }
 
 .tasks {
@@ -397,7 +427,7 @@ a {
   background: #333333;
 }
 .project-box__btn:hover {
-  background: #fff;
+  background: #F3F3F3;
 }
 .project-box__btn:hover a {
   color: #333333;
@@ -502,7 +532,7 @@ a {
   background: #333333;
 }
 .contacts-box__form--send:hover {
-  background: #fff;
+  background: #F3F3F3;
 }
 .contacts-box__form--send:hover a {
   color: #333333;
@@ -524,5 +554,123 @@ a {
 }
 .contacts-box__img img {
   height: 23.063rem;
+}
+
+.footer-inner {
+  color: #fff;
+  background: #333333;
+}
+.footer-box {
+  padding-top: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer-menu h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-b);
+  margin-bottom: 1.563rem;
+}
+.footer-menu li + li {
+  margin-top: 1rem;
+}
+.footer-menu li a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #fff;
+}
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+.footer-contacts h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-b);
+  margin-bottom: 1.563rem;
+}
+.footer-contacts__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 1.938rem;
+}
+.footer-contacts__city svg {
+  margin-right: 1.188rem;
+}
+.footer-contacts__city p {
+  width: 19.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-r);
+}
+.footer-contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 4.5rem;
+}
+.footer-contacts__phone svg {
+  margin-right: 1.188rem;
+}
+.footer-contacts__phone p {
+  width: 19.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-r);
+}
+.footer-contacts__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 1.188rem;
+}
+.footer-contacts__mail svg {
+  margin-right: 1.188rem;
+}
+.footer-contacts__mail p {
+  width: 19.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-r);
+}
+.footer-social h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-b);
+  margin-bottom: 1.563rem;
+}
+.footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.footer-copy {
+  margin-top: 3.75rem;
+  border-top: 0.063rem solid rgba(255, 255, 255, 0.1);
+}
+.footer-copy p {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #BDBDBD;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */

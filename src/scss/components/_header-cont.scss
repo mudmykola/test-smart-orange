@@ -48,6 +48,25 @@
         background: $default;
         bottom: 0;
         padding: 1.875rem 3.125rem;
+        @extend %dtrans;
+        &:hover {
+          background: $c500;
+          @extend %htrans;
+
+          a {
+            color: $c100;
+            @extend %htrans;
+          }
+
+          svg {
+            margin-left: 1rem;
+            @extend %htrans;
+
+            path {
+              fill: $c100;
+            }
+          }
+        }
         &:hover{
           img{
             padding-left: 1rem;

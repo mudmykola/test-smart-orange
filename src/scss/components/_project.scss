@@ -57,7 +57,7 @@
       @extend %dtrans;
 
       &:hover {
-        background: $default;
+        background: $c500;
         @extend %htrans;
 
         a {
@@ -73,9 +73,7 @@
             fill: $c100;
           }
         }
-
       }
-
       a {
         color: $default;
 
