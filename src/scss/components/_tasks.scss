@@ -1,0 +1,38 @@
+.tasks {
+  margin: 7.5rem 0;
+
+  h2 {
+    font-size: 4rem;
+    line-height: 4.375rem;
+    font-weight: var(--font-l);
+    color: $c200;
+    margin-bottom: 3.75rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 11.688rem;
+
+    li {
+      width: 35.625rem;
+      display: flex;
+      align-items: center;
+      gap: 1.875rem;
+
+      h3 {
+        font-size: 12.5rem;
+        line-height: 13.75rem;
+        color: $c200;
+      }
+
+      p {
+        font-size: 1.188rem;
+        line-height: 1.438rem;
+        color: $c100;
+        font-weight: var(--font-r);
+      }
+    }
+  }
+
+}
