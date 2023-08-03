@@ -22,6 +22,7 @@ $c100: #333333;
 $c200: #BDBDBD;
 $c300: #0000;
 $c400: #FBFBFB;
+$c500: #F3F3F3;
 
 $default: #fff;
 
@@ -50,7 +51,7 @@ $default: #fff;
 //btn
 %send-btn {
   border: 1px solid $c100;
-  padding: 17px 30px;
+  padding: 1.063rem 1.875rem;
   border-radius: 6px;
   cursor: pointer;
 

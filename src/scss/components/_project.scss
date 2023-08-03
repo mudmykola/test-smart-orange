@@ -9,6 +9,7 @@
 
   &-box {
     margin-bottom: 0.625rem;
+
     &__img {
 
       &--col1,
@@ -20,18 +21,21 @@
       &--col1 {
         margin-bottom: 30px;
 
-        img{
+        img {
           @extend %dtrans;
-          &:hover{
+
+          &:hover {
             @extend %border-ef;
             @extend %htrans;
           }
         }
       }
-      &--col2{
-        img{
+
+      &--col2 {
+        img {
           @extend %dtrans;
-          &:hover{
+
+          &:hover {
             @extend %border-ef;
             @extend %htrans;
           }
@@ -46,32 +50,38 @@
     &__btn {
       display: flex;
       justify-content: flex-end;
-    align-items: flex-end;
+      align-items: flex-end;
       margin-left: auto;
       background: $c100;
       @extend %global-btn;
-      @extend  %dtrans;
-      &:hover{
+      @extend %dtrans;
+
+      &:hover {
         background: $default;
-        @extend  %htrans;
-        a{
+        @extend %htrans;
+
+        a {
           color: $c100;
-          @extend  %htrans;
+          @extend %htrans;
         }
-        svg{
+
+        svg {
           margin-left: 1rem;
-          @extend  %htrans;
-          path{
+          @extend %htrans;
+
+          path {
             fill: $c100;
           }
         }
 
       }
+
       a {
         color: $default;
+
         svg {
           margin-left: 0.75rem;
-          @extend  %dtrans;
+          @extend %dtrans;
 
           path {
             fill: $default;

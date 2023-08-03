@@ -1,0 +1,104 @@
+.contacts{
+  margin: 7.5rem 0;
+  h2{
+    font-size: 4rem;
+    line-height: 4.375rem;
+    font-weight: var(--font-l);
+    color: $c200;
+    margin-bottom: 1.375rem;
+  }
+  &-box{
+    display: flex;
+    gap: 1.875rem;
+    &__form{
+      display: flex;
+      flex-direction: column;
+      width: 24.438rem;
+      &--input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        input{
+          border: none;
+          outline: none;
+          background: $c500;
+          height: 2.875rem;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          padding: 0.938rem 0 0.938rem 1.313rem;
+        }
+      }
+      textarea{
+        margin: 0.625rem 0 1.313rem;
+        border: none;
+        outline: none;
+        background: $c500;
+        height: 9.188rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0.938rem 0 0.938rem 1.313rem;
+      }
+      &--confirm{
+        display: flex;
+        margin-left: 1.313rem;
+        svg{
+          width: 1.688rem;
+          height: 1.688rem;
+        }
+        p{
+          font-size: 0.875rem;
+          font-weight: var(--font-r);
+          margin-left: 0.313rem;
+        }
+      }
+      &--send{
+        margin-top: 1.313rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background: $c100;
+        @extend %global-btn;
+        @extend %dtrans;
+        &:hover {
+          background: $default;
+          @extend %htrans;
+
+          a {
+            color: $c100;
+            @extend %htrans;
+          }
+
+          svg {
+            margin-left: 1rem;
+            @extend %htrans;
+
+            path {
+              fill: $c100;
+            }
+          }
+
+        }
+        a {
+          color: $default;
+
+          svg {
+            margin-left: 0.75rem;
+            @extend %dtrans;
+
+            path {
+              fill: $default;
+
+            }
+          }
+        }
+      }
+    }
+    &__img{
+      img{
+        height: 23.063rem;
+      }
+
+    }
+  }
+
+}
