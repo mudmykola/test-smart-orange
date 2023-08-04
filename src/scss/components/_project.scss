@@ -89,4 +89,46 @@
       }
     }
   }
+  &-img{
+    &__sub{
+      position: absolute;
+      top: 0;
+      background: rgba(51, 51, 51, 0.5);
+      height: 100%;
+      h2{
+        padding-top: 25px;
+        margin: 0 0 0 30px;
+        font-size: 4rem;
+        line-height: 4.375rem;
+        color: $default;
+        font-weight: var(--font-b);
+        margin-bottom: 0.875rem;
+      }
+      a{
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        margin: 0 0.75rem 0 1.875rem;
+        @extend %dtrans;
+        &:hover{
+          svg{
+            margin-left: 0.313rem;
+            @extend %htrans;
+          }
+        }
+        svg{
+          path{
+            fill: $default;
+          }
+        }
+      }
+    }
+    &__el1{
+      position: relative;
+    }
+    &__el3,&__el4,&__el5{
+      img{
+        height: 100%;
+      }
+    }
+  }
 }
