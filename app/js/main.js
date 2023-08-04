@@ -23,6 +23,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_ex_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_ex_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_forms_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/forms.js */ "./src/js/components/forms.js");
+/* harmony import */ var _components_forms_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_forms_js__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -174,6 +177,64 @@ const link = document.createElement("a");
 link.href = "google.com";
 link.appendChild(logo.children[0]);
 logo.appendChild(link);
+
+/***/ }),
+
+/***/ "./src/js/components/forms.js":
+/*!************************************!*\
+  !*** ./src/js/components/forms.js ***!
+  \************************************/
+/***/ (() => {
+
+const contactForm = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById('email');
+const serviceInput = document.getElementById('service');
+const messageInput = document.getElementById('message');
+contactForm.addEventListener('submit', async event => {
+  event.preventDefault();
+  const name = nameInput.value;
+  const phone = phoneInput.value;
+  const email = emailInput.value;
+  const service = serviceInput.value;
+  const message = messageInput.value;
+  if (!/^\+?\d+$/.test(phone)) {
+    alert('Номер телефону має містити лише цифри та може починатися зі знаку "+".');
+    return;
+  }
+  if (!name || !phone || !email || !service || !message) {
+    alert('Будь ласка, заповніть усі поля форми.');
+    return;
+  }
+  const formData = {
+    name,
+    phone,
+    email,
+    service,
+    message
+  };
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    const data = await response.json();
+    console.log(data);
+    alert('Дані успішно надіслані на сервер.');
+    nameInput.value = '';
+    phoneInput.value = '';
+    emailInput.value = '';
+    serviceInput.value = '';
+    messageInput.value = '';
+  } catch (error) {
+    console.error('Помилка при відправці форми:', error);
+    alert('Сталася помилка під час відправки форми.');
+  }
+});
 
 /***/ }),
 

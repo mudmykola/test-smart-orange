@@ -1,5 +1,6 @@
 .about {
   margin-top: 7.5rem;
+
   &-inner {
     position: relative;
     z-index: 99999;
@@ -7,7 +8,8 @@
     display: flex;
     justify-content: center;
     gap: 1.875rem;
-    &:after{
+
+    &:after {
       position: absolute;
       content: '';
       width: 100%;
@@ -23,8 +25,10 @@
     align-items: center;
     gap: 1.875rem;
     height: 27.188rem;
+
     &__first {
       width: 16.875rem;
+
       img {
         padding-top: 1.875rem;
       }
@@ -33,6 +37,7 @@
 
   &-text {
     width: 25rem;
+
     h2 {
       font-size: 4rem;
       line-height: 4.375rem;
@@ -40,7 +45,8 @@
       color: $c200;
       margin-bottom: 1.25rem;
     }
-    p{
+
+    p {
       font-size: 1rem;
       line-height: 1.25rem;
 
@@ -49,10 +55,41 @@
     &__btn {
       margin-top: 1.25rem;
       @extend %global-btn;
-      a{
+
+      &:hover {
+        background: $c500;
+        @extend %htrans;
+
+        a {
+          color: $c100;
+          @extend %htrans;
+        }
+
+        svg {
+          margin-left: 1rem;
+          @extend %htrans;
+
+          path {
+            fill: $c100;
+          }
+        }
+      }
+
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
+        @extend %dtrans;
+
+        svg {
+          margin-left: 0.75rem;
+          @extend %dtrans;
+
+          path {
+            fill: $default;
+
+          }
+        }
       }
     }
   }

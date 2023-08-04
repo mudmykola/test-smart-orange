@@ -60,7 +60,7 @@
         @extend %global-btn;
         @extend %dtrans;
         &:hover {
-          background: $default;
+          background: $c500;
           @extend %htrans;
 
           a {

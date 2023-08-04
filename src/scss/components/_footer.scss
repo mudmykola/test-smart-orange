@@ -1,2 +1,111 @@
 .footer {
+  &-inner{
+    color: $default;
+    background: $c100;
+  }
+  &-box{
+    padding-top: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-menu{
+    h2{
+      font-size: 1rem;
+      line-height: 1.25rem;
+      font-weight: var(--font-b);
+      margin-bottom: 1.563rem;
+    }
+  li+li{
+    margin-top: 1rem;
+  }
+    li{
+      a{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $default;
+        @extend %dtrans;
+        &:hover{
+          text-decoration: underline;
+          @extend %htrans;
+        }
+      }
+    }
+  }
+  &-contacts{
+    h2{
+      font-size: 1rem;
+      line-height: 1.25rem;
+      font-weight: var(--font-b);
+      margin-bottom: 1.563rem;
+    }
+    &__city{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.938rem;
+      svg{
+        margin-right:  1.188rem;
+      }
+      p{
+        width: 19.625rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: var(--font-r);
+      }
+    }
+    &__phone{
+      display: flex;
+      align-items: flex-start;
+      margin-top: 4.5rem;
+      svg{
+        margin-right:  1.188rem;
+      }
+      p{
+        width: 19.625rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: var(--font-r);
+      }
+    }
+    &__mail{
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1.188rem;
+      svg{
+        margin-right:  1.188rem;
+      }
+      p{
+        width: 19.625rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: var(--font-r);
+      }
+    }
+  }
+  &-social{
+    h2{
+      font-size: 1rem;
+      line-height: 1.25rem;
+      font-weight: var(--font-b);
+      margin-bottom: 1.563rem;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+  &-copy{
+    margin-top: 3.75rem;
+    border-top: 0.063rem solid rgba(255, 255, 255, 0.1);
+
+    p{
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      color: $c200;
+      opacity: .5;
+
+    }
+  }
 }
